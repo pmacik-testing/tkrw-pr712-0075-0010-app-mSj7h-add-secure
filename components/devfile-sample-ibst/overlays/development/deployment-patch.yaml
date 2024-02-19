@@ -1,0 +1,18 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: devfile-sample-ibst
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/pmacik-testing/tkrw-pr712-0075-0010-tenant/tkrw-pr712-0075-0010-app/devfile-sample-ibst@sha256:24f1f96f449d5af4e09ec9789865e4c37a372bb4a328c2fbed0009ce79dd862e
+        name: my-nodejs
+        resources: {}
+status: {}
